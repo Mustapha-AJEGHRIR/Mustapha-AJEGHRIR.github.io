@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: submenus
 nav: true
@@ -9,4 +9,8 @@ children:
     - title: divider
     - title: projects
       permalink: /projects/
----
+--- -->
+
+
+
+<!-- Uncomment the code above if you want to use the dropdown menu. -->
