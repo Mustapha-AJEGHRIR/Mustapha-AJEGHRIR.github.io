@@ -31,6 +31,15 @@ I’m very interested in AI and its applications. I love to engineer new/classic
   - Natural Language Processing
   - Computer Vision
   - Audio
+  - Tabular Data
+  - Forcasting
+  - Reinforcement Learning
+  ...
 - Mathematics
+  - Modelization
+  - Optimization
+  - Probabilities
+  - Algebra
+  ...
 - Software Engineering
 - Full stack development
