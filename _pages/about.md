@@ -16,7 +16,8 @@ profile:
     <p>m5u9s00@gmail.com</p>
 
 news: false  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_projects : true
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
@@ -44,3 +45,23 @@ I’m very interested in AI and its applications. I love to engineer new/classic
   ...
 - Software Engineering
 - Full stack development
+
+
+---
+
+## Some of my projects :
+See all projects here : [`projects`](/projects)
+
+{% if page.selected_projects -%}
+  <!-- Projects -->
+  <div>
+    {%- assign sorted_projects = site.projects | where: "selected", true | sort: "importance" -%}
+    <div class="projects">  
+      <div class="grid">
+        {%- for project in sorted_projects -%}
+        {% include projects.html %}
+        {%- endfor %}
+      </div>              
+    </div>
+  </div>
+{%- endif %}
