@@ -8,6 +8,13 @@ category: work
 selected: true
 ---
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/demo_illuin_full.gif" title="preview" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+
 The github repository : 
 <div style= "text-align: center;">
     <div class="github-card" data-github="Mustapha-AJEGHRIR"  data-repo="medical_txt_parser" data-height="" data-theme=""></div>
