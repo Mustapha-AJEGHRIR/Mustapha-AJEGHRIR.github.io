@@ -8,12 +8,6 @@ category: work
 selected: true
 ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/demo_illuin_full.gif" title="preview" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
 
 The github repository : 
 <div style= "text-align: center;">
@@ -80,3 +74,11 @@ Then, fine tuned 3 `SciBERT` models (one for each group of relations) to extract
 
 ## The semantic search task :
 For the semantic search, we have used `MiniLM-L6` model to embed the text into a `384` dimension vector space. We then used `Annoy` to create Indexation trees for fast neighbor search. We finally used `Streamlit` to visualize the results and `Flask` as a backend.
+
+
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/demo_illuin_full.gif" title="preview" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
