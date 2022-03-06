@@ -2,8 +2,8 @@
 layout: page
 title: Inv-MR-sort and Inv-NCS
 description: Decision systems for sorting and classification
-img: assets/img/demo_illuin.gif
-importance: 5
+img: assets/img/linear_program.png
+importance: 4
 category: work
 selected: true
 ---
