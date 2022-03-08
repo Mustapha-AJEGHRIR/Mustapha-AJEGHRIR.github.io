@@ -1,11 +1,19 @@
 ---
-layout: page
+layout: distill
 title: Inv-MR-sort and Inv-NCS
 description: Decision systems for sorting and classification
 img: assets/img/linear_program.png
 importance: 4
 category: work
 selected: true
+
+authors:
+  - name: AJEGHRIR Mustapha
+    url: "/"
+    affiliations:
+      name: Student, CentraleSupelec
+
+
 ---
 
 
@@ -27,58 +35,14 @@ The goal of this project was to create a decision system for sorting and classif
 ## Simple example :
 Imagine you are the responsible person for recruiting students in a prestigious university, your goal is to determine the right criteria of admission (to decide someone should enter or not). Let's consider the following example :
 
-<!-- table 3x3 -->
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">Criteria</th>
-      <th scope="col">Mathematics</th>
-      <th scope="col">Physics</th>
-      <th scope="col">Chemistry</th>
-      <th scope="col">Language 1</th>
-      <th scope="col">Language 2</th>
-      <th scope="col">Results</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Student 1</th>
-      <td>15</td>
-      <td>15</td>
-      <td>13</td>
-      <td>10</td>
-      <td>12</td>
-      <td>Good</td>
-    </tr>
-    <tr>
-      <th scope="row">Student 2</th>
-      <td>18</td>
-      <td>14</td>
-      <td>18</td>
-      <td>12</td>
-      <td>13</td>
-      <td>Very Good</td>
-    </tr>
-    <tr>
-      <th scope="row">Student 3</th>
-      <td>6</td>
-      <td>11</td>
-      <td>12</td>
-      <td>10</td>
-      <td>9</td>
-      <td>Bad</td>
-    </tr>
-    <tr>
-      <th scope="row">Student 4</th>
-      <td>5</td>
-      <td>7</td>
-      <td>12</td>
-      <td>13</td>
-      <td>4</td>
-      <td>Very Bad</td>
-    </tr>
-  </tbody>
-</table>
+
+| Criteria      | Mathematics | Physics | Chemistry | Language 1 | Language 2 | Results 
+| ------------- |:-------------:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| **Student 1**| 15 | 15 | 13 | 10 | 12 | Good |
+| **Student 2**| 18 | 14 | 18 | 12 | 13 | Very Good |
+| **Student 3**| 6 | 11 | 12 | 10 | 9 | Bad |
+| **Student 4**| 5 | 7 | 12 | 13 | 4 | Very Bad |
+
 
 The `Results` column is the result we want to predict for each student. Let’s say, we can only know this label after few years after the entry in the university. So, it is better to know in prior which student will have good results.
 
