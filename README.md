@@ -17,6 +17,7 @@ If you like the theme, give it a star!
 
 
 
+
 ## User community
 
 The vibrant community of **al-folio** users is growing!
