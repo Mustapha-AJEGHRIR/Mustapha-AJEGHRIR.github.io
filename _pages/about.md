@@ -11,7 +11,7 @@ profile:
   caption: >
     <i style="font-size: x-small">Generated with ArcaneGAN4</i>
   address: >
-    <p>Student at CentraleSupelec</p>
+    <p>ML Engineer at KLEE Group</p>
     <p>+33 6 34 66 88 58</p>
     <p>m5u9s00@gmail.com</p>
 
