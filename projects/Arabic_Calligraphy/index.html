@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://mustapha-ajeghrir.github.io/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mustapha  AJEGHRIR | Page not found</title>
+    <title>Mustapha  AJEGHRIR | Arabic Calligraphy</title>
     <meta name="author" content="Mustapha  AJEGHRIR" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Arabic Calligraphy Style Detection and Character Recognition" />
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
 
@@ -31,7 +31,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>Ⓜ️</text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://mustapha-ajeghrir.github.io/404.html">
+    <link rel="canonical" href="https://mustapha-ajeghrir.github.io/projects/Arabic_Calligraphy/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -95,12 +95,64 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Arabic Calligraphy</h1>
+            <p class="post-description">Arabic Calligraphy Style Detection and Character Recognition</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://mustapha-ajeghrir.github.io/">here</a>.</p>
+            <p>The github repository :</p>
+<div style="text-align: center;">
+    <div class="github-card" data-github="Mustapha-AJEGHRIR" data-repo="arabic_calligraphy" data-height="" data-theme=""></div>
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+</div>
+
+<p>In this project we were a team of 3 students :</p>
+<ul>
+  <li>Mustapha Ajeghrir</li>
+  <li>Nouamane Tazi</li>
+  <li>Asmae Khald</li>
+</ul>
+
+<p>This project is separated in two parts, the first one is an introduction to the project and it aims to recognise the style of the Arabic calligraphy. The second part and the main part aims to recognize the characters and words from the calligraphy.</p>
+
+<h2 id="acsr-arabic-calligraphy-style-recognition">
+<code class="language-plaintext highlighter-rouge">ACSR</code> (Arabic Calligraphy Style Recognition):</h2>
+<p>Our implementation is highly inspired from <a href="https://github.com/ARBML/ARBML" target="_blank" rel="noopener noreferrer">ArbMl</a>’s work and the data (synthetic and real) from <a href="https://mhmoodlan.github.io/blog/arabic-font-classification#4-data" target="_blank" rel="noopener noreferrer">Mahmoud Aslan</a>’s collection. The main problem in <code class="language-plaintext highlighter-rouge">ACSR</code> (Arabic Calligraphy Style Recognition) is the scarcity of data. Hopefully, it is possible to generate data using digital fonts to help the training, the model is then tested on the real data reaching a score of 97% in accuracy. The used architecture is a simple CNN network (more on that in the full report in the end of this article). We have also managed to perform some saliency maps as shown in the figure below.</p>
+
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/atabic_saliency_maps-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/atabic_saliency_maps-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/atabic_saliency_maps-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/atabic_saliency_maps.jpg">
+  </picture>
+
+</figure>
+
+<h4 id="demo">Demo</h4>
+<p>A demo could be accessed is the following HuggingFace spaces link : <a href="https://huggingface.co/spaces/mustapha/ACSR" target="_blank" rel="noopener noreferrer">https://huggingface.co/spaces/mustapha/ACSR</a></p>
+
+<h2 id="ocr-optical-character-recognition">
+<code class="language-plaintext highlighter-rouge">OCR</code> (optical character recognition):</h2>
+<p>The main inspiration of this part is <a href="https://www.researchgate.net/publication/354751878_TrOCR_Transformer-based_Optical_Character_Recognition_with_Pre-trained_Models" target="_blank" rel="noopener noreferrer">TrOCR</a> paper. It uses a <code class="language-plaintext highlighter-rouge">Vision-Encoder-Decoder</code> model. For the encoder we used the ViT model, which applies a pure transformer directly to sequences of image patches to classify the full image. Its embeddings are then passed to the decoder. This decoder uses the weights of AraBERT. The figure below shows the architecture of the model.</p>
+
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/model_trocr-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/model_trocr-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/model_trocr-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/model_trocr.png">
+  </picture>
+
+</figure>
+
+<h2 id="for-a-detailed-description-">For A detailed description :</h2>
+<p>Below is our report for this project, please feel free to read it and email me if necessary.</p>
+<iframe src="/assets/pdf/Rapport_arabic_calligraphy.pdf" style="width:100%; height:500px;" frameborder="0"></iframe>
 
           </article>
 
