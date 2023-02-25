@@ -3,7 +3,8 @@ layout: about
 title: about
 permalink: /
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-subtitle: <a href='#'>Machine Learning Engineer At KLEE Group</a>.
+# subtitle: <a href='#'>Machine Learning Engineer At KLEE Group</a>.
+subtitle: <a href='#'>AI researcher At HrFlow.ai</a>.
 
 profile:
   align: right
@@ -11,8 +12,9 @@ profile:
   caption: >
     <i style="font-size: x-small">Generated with ArcaneGAN4</i>
   address: >
-    <p>ML Engineer at KLEE Group</p>
+    <p>AI researcher at HrFlow.ai</p>
     <p>+33 6 34 66 88 58</p>
+    <p>contact@mustapha-ajeghrir.me</p>
     <p>m5u9s00@gmail.com</p>
 
 news: false  # includes a list of news items
@@ -32,10 +34,10 @@ I’m very interested in AI and its applications. I love to engineer new/classic
 - Artificial Intelligence 
   - Natural Language Processing
   - Computer Vision
+  - Reinforcement Learning
   - Audio
   - Tabular Data
   - Forcasting
-  - Reinforcement Learning
   ...
 - Mathematics
   - Modelization
